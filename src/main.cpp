@@ -6,8 +6,8 @@ void setup() {
 
 void loop() {
   digitalWrite(GPIO_NUM_13, HIGH);
-  delay(20);
+  delay(200);
   digitalWrite(GPIO_NUM_13, LOW);
-  delay(20);
+  delay(200);
 
 }
