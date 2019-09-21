@@ -34,11 +34,11 @@ tft.fillScreen(TFT_PINK);
 
   tft.setTextColor(TFT_RED, TFT_BLUE);
   tft.drawString("Beacon 1",0,0);
-  tft.drawGFXText(10,10, String(distance1), COLOR_RED);
+  tft.drawNumber(distance1,10,10);
   tft.drawString("Beacon 2",0,50);
-  tft.drawGFXText(60,10, String(distance2), COLOR_RED);
+  tft.drawNumber(distance2,10,60);
   tft.drawString("Beacon 3", 0,140);
-  tft.drawGFXText(10,150, String(distance3), COLOR_RED);
+  tft.drawNumber(distance3,10,150);
 
   
 
