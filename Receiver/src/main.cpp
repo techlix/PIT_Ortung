@@ -34,17 +34,11 @@ tft.fillScreen(TFT_PINK);
 
   tft.setTextColor(TFT_RED, TFT_BLUE);
   tft.drawString("Beacon 1",0,0);
-  char *intStr = itoa(distance1);
-  String strDOne = string(intStr);
-  tft.text(strDOne,0,10)
+  tft.drawGFXText(10,10, String(distance1), COLOR_RED);
   tft.drawString("Beacon 2",0,50);
-  char *intStrI = itoa(distance2);
-  String strDTwo = string(intStrI);
-  tft.text(strDTwo,0,60);
-  tft.drawString("Beacon 3", 0,150);
-  char *intStrII = itoa(distance3);
-  string strDThree = string(intStrII);
-  tft.text(strDTHree,0,60);
+  tft.drawGFXText(60,10, String(distance2), COLOR_RED);
+  tft.drawString("Beacon 3", 0,140);
+  tft.drawGFXText(10,150, String(distance3), COLOR_RED);
 
   
 
