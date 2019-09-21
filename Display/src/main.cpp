@@ -7,9 +7,9 @@ TFT_eSPI tft = TFT_eSPI();  // Invoke library, pins defined in User_Setup.h
 
 unsigned long drawTime = 0;
 
-int distance1;
-int distance2;
-int distance3;
+int distance1 = 1;
+int distance2 = 2;
+int distance3 = 3;
 
 void setup(void) {
   tft.init();
